@@ -43,7 +43,7 @@ This document compares the registration flow between:
 |---|---|---|
 | SQL Queries | ORM / Prepared Statements | Raw SQL |
 | SQL Injection | Protected | Vulnerable |
-| Password Storage | Argon2id + Pepper | Plain Text |
+| Password Storage | Argon2id + Pepper+sha-256 | Plain Text |
 | OTP Security | 6-digit + Expiry | Weak OTP |
 | Validation | Strong | Weak |
 | Session Security | Secure | Weak |
