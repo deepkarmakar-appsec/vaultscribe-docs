@@ -1,14 +1,13 @@
-File name:
+# 🔐 VaultScribe Secure vs Vulnerable Register Flow
 
-secure-vs-vulnerable-register-flow.md
+This document compares the registration flow between:
 
-# 🔐 VaultScribe — Secure vs Vulnerable Register Flow
-
-This document compares the secure and intentionally vulnerable registration flow implementations in VaultScribe.
+- `vaultscribe-secure`
+- `vaultscribe-vulnerable`
 
 ---
 
-# ✅ Secure Register Flow
+# ✅ vaultscribe-secure
 
 - Uses Laravel ORM / Prepared Statements
 - Prevents SQL Injection attacks
@@ -23,7 +22,7 @@ This document compares the secure and intentionally vulnerable registration flow
 
 ---
 
-# ❌ Vulnerable Register Flow
+# ❌ vaultscribe-vulnerable
 
 - Uses raw SQL queries
 - Vulnerable to SQL Injection
@@ -40,7 +39,7 @@ This document compares the secure and intentionally vulnerable registration flow
 
 # 🔥 Security Comparison
 
-| Feature | Secure Version | Vulnerable Version |
+| Feature | vaultscribe-secure | vaultscribe-vulnerable |
 |---|---|---|
 | SQL Queries | ORM / Prepared Statements | Raw SQL |
 | SQL Injection | Protected | Vulnerable |
